@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DespesasApi.Application\DespesasApi.Application.csproj" />
+    <ProjectReference Include="..\DespesasApi.Domain\DespesasApi.Domain.csproj" />
+    <ProjectReference Include="..\DespesasApi.Infra\DespesasApi.Infra.csproj" />
+    <ProjectReference Include="..\DespesasApi.UnitOfWork\DespesasApi.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>
